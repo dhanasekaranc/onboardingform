@@ -2,7 +2,7 @@ import { useState,useContext,createContext } from "react";
 
 export const DataContext = createContext();
 
-const initState = { fullName:"", displayName:"", workspaceName:"",workspaceURL:"",team:""}
+const initState = { fullName:"", displayName:"", workspaceName:"",workspaceURL:"",usage:""}
 
 const DataProvider = ({children}) => {
     const [data, setData] = useState(initState);

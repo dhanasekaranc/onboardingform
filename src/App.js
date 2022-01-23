@@ -4,6 +4,8 @@ import Signup from "./components/Signup";
 import DataProvider from "./components/DataProvider"
 import UserDetails from './components/UserDetails';
 import WorkspaceDetails from './components/WorkspaceDetails';
+import Usage from './components/Usage';
+import SuccessPage from "./components/SuccessPage"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<UserDetails />} />
             <Route path="/workspace" element={<WorkspaceDetails />} />
+            <Route path="/usage" element={<Usage />} />
+            <Route path="/success" element={<SuccessPage />} />
           </Routes>
         </BrowserRouter>
       </DataProvider>

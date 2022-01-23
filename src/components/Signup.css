@@ -1,6 +1,6 @@
 .box {
     box-sizing: border-box;
-    margin:0.5rem;
+    margin:auto;
     height : 100vh;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .stage-value {
@@ -33,57 +33,16 @@
 
 .container {
     display: inline-block;
-}
-
-.input {
     padding: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
+    background-color: #fff;
 }
 
-.workspace-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+@media only screen and (min-width: 400px) {
+    .box {
+        height: 80vh;
+    }
+    .outer {
+        background-color: #fff;
+        margin: 10vh;
+    }
 }
-
-.url {
-   padding: 0.5rem;
-   box-sizing: border-box;
-}
-
-.input-div {
-    margin: 1.5rem 0;
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.sub-title {
-    font-size: 1rem;
-    color: #87918a;
-}
-
-.label {
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0.5rem 0;
-}
-
-.button {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    width: 100%;
-    background-color: #7233de;
-    color : #ffffff;
-}
-
-
-/* @media only screen and  (min-width:768px) {
-.box {
-    max-width: 50%;
-}
-} */

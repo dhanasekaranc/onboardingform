@@ -37,6 +37,15 @@
     background-color: #fff;
 }
 
+/* .stage-value::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  border: 1px solid #ccc;
+  width: 20px;
+}  */
+
 @media only screen and (min-width: 400px) {
     .box {
         height: 80vh;

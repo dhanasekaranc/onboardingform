@@ -10,7 +10,7 @@ const WorkspaceDetails = () => {
     const {data,setData} = useContext(DataContext);
 
     const handleClick = () => {
-        if(data.workspaceName.length && data.workspaceURL.length) {
+        if(data.workspaceName.length) {
             navigate("/usage");
         }
         else {
@@ -29,7 +29,7 @@ const WorkspaceDetails = () => {
                   onChange={(e) => setData(data => ({...data,workspaceName: e.target.value}))}>
                 </input>
                 <div className="label">
-                    <label>Workspace URL *
+                    <label>Workspace URL
                         <span style={{color: "gray"}}>(optional)</span>
                     </label>
                 </div>

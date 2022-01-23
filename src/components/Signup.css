@@ -1,0 +1,43 @@
+.box {
+    box-sizing: border-box;
+    height : 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 1rem;
+    color: #87918a;
+}
+
+.label {
+    text-align: left;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.workspace {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    background-color:  #3b37b0;
+    color : #ffffff;
+}
+
+/* @media only screen and  (min-width:768px) {
+.box {
+    max-width: 50%;
+}
+} */

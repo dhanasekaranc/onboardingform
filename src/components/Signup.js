@@ -1,14 +1,27 @@
 import { useState } from "react";
 import Logo from "./Logo";
-import UserDetails from "./UserDetails";
 import "./Signup.css";
 
-const Signup = () => {
+const stages = ["1","2","3","4"];
+
+const Signup = ({stage,children}) => {
+
     return (
         <div className="box">
-            <Logo />
-            <UserDetails />
-                <button className="workspace">Create Workspace</button>
+            <div className="container">
+                <Logo />
+                <div className="stage">
+                    {stages.map((item,index) => {
+                        return (
+                            // {`${index <= 2? "stage-value current-stage":"stage-value"}`}
+                            <div className={`${(index < 2)?"stage-value current-stage" :"stage-value"}`} key={index}>
+                                <p>{item}</p>
+                            </div>
+                        )
+                    })}
+                </div>
+                {children}
+            </div>
         </div>
     )
 }

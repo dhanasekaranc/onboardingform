@@ -1,28 +1,21 @@
 import './App.css';
-import {  Routes,Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./components/Signup";
+import DataProvider from "./components/DataProvider"
+import UserDetails from './components/UserDetails';
+import WorkspaceDetails from './components/WorkspaceDetails';
 
 function App() {
   return (
     <div className="App">
-      <Signup />
-      {/* <Routes>
-        <Route path ="/" component={Signup}/>
-        </Routes> */}
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <DataProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<UserDetails />} />
+            <Route path="/workspace" element={<WorkspaceDetails />} />
+          </Routes>
+        </BrowserRouter>
+      </DataProvider>
     </div>
   );
 }

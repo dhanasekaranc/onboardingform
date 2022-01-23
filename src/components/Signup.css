@@ -1,5 +1,6 @@
 .box {
     box-sizing: border-box;
+    margin:0.5rem;
     height : 100vh;
     display: flex;
     flex-direction: column;
@@ -7,9 +8,52 @@
     align-items: center;
 }
 
+.stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.stage-value {
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0.5rem;
+    margin : 0 1.5rem;
+    border-radius: 100%;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+}
+
+.current-stage {
+   background-color: #7233de;
+   color: #fff;
+}
+
+.container {
+    display: inline-block;
+}
+
 .input {
     padding: 0.5rem;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.workspace-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.url {
+   padding: 0.5rem;
+   box-sizing: border-box;
+}
+
+.input-div {
+    margin: 1.5rem 0;
 }
 
 .title {
@@ -25,16 +69,18 @@
 .label {
     text-align: left;
     font-size: 1rem;
+    font-weight: 400;
     margin: 0.5rem 0;
 }
 
-.workspace {
-    margin: 0.5rem;
+.button {
+    margin: 0.5rem 0;
     padding: 0.5rem;
     width: 100%;
-    background-color:  #3b37b0;
+    background-color: #7233de;
     color : #ffffff;
 }
+
 
 /* @media only screen and  (min-width:768px) {
 .box {
